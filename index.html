@@ -1,5 +1,14 @@
-<body>
-    <h1>Name Poem Generator</h1>
+<div className="container">
+    <Head>
+        <title>Name Poem Generator!</title>
+        <link rel="stylesheet" href="style.css">
+      </Head>
+    <main>
+        <Header title="Name Poem Generator!" />
+        <p id = "write">
+
+            
+        </p>
     <script>
         
 
@@ -115982,7 +115991,7 @@ const dict = {"ˈbaʊt":["'bout","bout"],
 "zɪˈwɪki":["zywicki"]}
 function test() {
     for (const property in dict) {
-        let input = document.getElementById("id").value;
+        let input = document.getElementById("input").value;
         let expression = `^([ˌˈeɪɛuəɑæɝəiɔaʊ]*[${input}][ˌˈeɪɛuəɑæɝəiɔaʊ]*)+$`
         let regex = new RegExp(expression)
         if (regex.test(property)) {
@@ -115994,8 +116003,9 @@ function test() {
       
 }
     </script>
-    <p id = "write"></p>
-    <form><input id = "id" type="text" name="input"></form>
+
+    <form><input id = "input" type="text" name="input"></form>
     <form><input id="button" type="button" value="Generate" onclick="test();"/></form>
     
   </body>
+  </div>
