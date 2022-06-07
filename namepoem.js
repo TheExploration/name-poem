@@ -115979,9 +115979,8 @@ const dict = {"ˈbaʊt":["'bout","bout"],
 "zɪˈwɪki":["zywicki"]}
 
 for (const property in dict) {
-    if (/^[^pbtdhɡkvszmnɹʃjʒŋθðw]*([^pbtdhɡkvszmnɹʃjʒŋθðw]?[flz])+[^pbtdhɡkvszmnɹʃjʒŋθðw]*$/.test(property)) {
+    if (/^([ˌˈeɪɛuəɑæɝəiɔaʊ]*[fɫvzs][ˌˈeɪɛuəɑæɝəiɔaʊ]*)+$/.test(property)) {
         console.log(dict[property])
     }
-
 
 }
