@@ -115997,7 +115997,7 @@ const dict = {"ˈbaʊt":["'bout","bout"],
 function test() {
     for (const property in dict) {
         let input = document.getElementById("input").value;
-        let expression = `^([ˌˈeɪɛuəɑæɝəiɔaʊ]*[${input}][ˌˈeɪɛuəɑæɝəiɔaʊ]*)+$`
+        let expression = `^([ˌˈeɪɛuəɑæəiɔaʊ]*[${input}][ˌˈeɪɛuəɑæəiɔaʊ]*)+$`
         let regex = new RegExp(expression)
         if (regex.test(property)) {
             //document.write(dict[property])
@@ -116040,7 +116040,7 @@ function addng() {
     document.getElementById('input').value += 'ŋ';
 }
 function addr() {
-    document.getElementById('input').value += 'ɹ';
+    document.getElementById('input').value += 'ɹɝ';
 }
     </script>
     
