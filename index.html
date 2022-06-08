@@ -4,7 +4,12 @@
         <link rel="stylesheet" href="style.css">
       </Head>
     <main>
-        <Header title="Name Poem Generator!" />
+        <Header> 
+            <h1>Name Poem Generator!</h1>
+
+         
+
+        </Header>
         <p id = "write">
 
             
@@ -116002,10 +116007,57 @@ function test() {
     }
       
 }
-    </script>
+function clearVal() {
+    document.getElementById('write').innerHTML = "";
+}
+function addl() {
+        document.getElementById('input').value += "ɫ";
+}
+function addj() {
+    document.getElementById('input').value += "ʒ";
+}
+function addsh() {
+    document.getElementById('input').value += "ʃ";
+}
+function addch() {
+    document.getElementById('input').value += "ʒ";
+}
 
-    <form><input id = "input" type="text" name="input"></form>
-    <form><input id="button" type="button" value="Generate" onclick="test();"/></form>
+function addthi() {
+    document.getElementById('input').value += "ð";
+}
+function addth() { 
+    document.getElementById("input").value += "θ";
+}
+function addg() {
+    document.getElementById("input").value += "ɡ";
+}
+function addy() {
+    document.getElementById('input').value += 'j';
+}
+function addng() {
+
+    document.getElementById('input').value += 'ŋ';
+}
+function addr() {
+    document.getElementById('input').value += 'ɹ';
+}
+    </script>
     
-  </body>
+    <input type="button" value="l" onclick="addl()" />
+    <input type="button" value="j" onclick="addj()" />
+    
+    <input type="button" value="sh" onclick="addsh()" />
+    <input type="button" value="ch" onclick="addch()" />
+    <input type="button" value="th from this" onclick="addthi()" />
+    <input type="button" value="th from both" onclick="addth()" />
+    <input type="button" value="g" onclick="addg()" />
+    <input type="button" value="y" onclick="addy()" />
+    <input type="button" value="ng" onclick="addng()" />
+    <input type="button" value="r" onclick="addr()" />
+<p> Put Consonants Sounds in the text box. <br> If you have any sounds that appear in any of the buttons press the button instead.</p>
+    <form><input id = "input" type="text" name="input"></form>
+    
+    <button class="glow-on-hover" type="button"  onclick="clearVal(); test();">Generate</button>
+  <main>
   </div>
